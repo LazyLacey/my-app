@@ -26,3 +26,10 @@ export function search(input) {
     }
 }
 
+export function heroesLoaded(heroes) 
+{
+        return {
+            type: "HEROES_LOADED",
+            heroes
+        }
+}

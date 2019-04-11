@@ -21,13 +21,21 @@
         case 'CHANGE_FANDOM':
             return {
                 ...state,
-                DCOrMarvel: action.fandomName
-
+                inputSearch: state.fandom == action.fandomName ? state.inputSearch : "",
+                fandom: action.fandomName,
+                heroesList: state.fandom == action.fandomName ? state.heroesList : state.allHeroes[action.fandomName]
             }
         case 'SEARCH':
-            return{
+            return {
                 ...state,
-                inputSearch: [action.input]
+                inputSearch: action.fandom,
+                heroesList: state.allHeroes[state.fandom].filter(x => x.name.includes(action.input))
+            }
+        case 'HEROES_LOADED':
+            return {
+                ...state,
+                allHeroes: action.heroes,
+                heroesList: action.heroes[state.fandom]
             }
         default:
             return state
@@ -37,10 +45,11 @@
 
 function getInitialState() {
     return {
-        DCOrMarvel:("DC"),
+        fandom: 'dc',
         chosenHeroes:{},
-        inputSearch:"",
-        heroesList:[]
+        heroesList:[],
+        allHeroes: {},
+        inputSearch: ""
     }
 }
 
