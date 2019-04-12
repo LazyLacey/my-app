@@ -6,7 +6,6 @@ import Route from "react-router-dom/Route"
 
 class App extends Component {
   render() {
-    console.log(Workdesk)
     return (
       <BrowserRouter>
         <Switch>

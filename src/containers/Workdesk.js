@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HeaderHeroes from '../components/chosen-heroes/chosen-heroes'
+import ChosenHeroes from '../components/chosen-heroes/chosen-heroes'
 import ListOfHeroes from '../components/hero-list/list-of-heroes'
 import SwitchButtons from '../components/fandom-switcher/switch-buttons'
 import SearchString from '../components/search/search';
@@ -37,7 +37,7 @@ class Workdesk extends Component{
     render() {
         return(
             <div className='workdesk'>
-                <HeaderHeroes deleteHero = {this.props.deleteHero} chosenHeroes = {this.props.chosenHeroes.chosenHeroes} />
+                <ChosenHeroes deleteHero = {this.props.deleteHero} chosenHeroes = {this.props.chosenHeroes.chosenHeroes} />
                 <SearchString search = {this.props.search} searchText = {this.props.allHeroes.inputSearch}/>
                 <ListOfHeroes heroesList = {this.props.allHeroes.heroesList} addHero={this.props.addHero}/>
                 <SwitchButtons fandom={this.props.allHeroes.fandom}/>
