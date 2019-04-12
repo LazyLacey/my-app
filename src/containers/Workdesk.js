@@ -19,18 +19,18 @@ class Workdesk extends Component{
                 throw 'Ни шмогла'                
             }
 
-            this.props.changeFandom(this.props.history.location.pathname.slice(1))
-            this.props.heroesLoaded(heroes, this.props.history.location.pathname.slice(1))
+            var currentLocation = this.props.history.location.pathname.slice(1);
+            this.props.changeFandom(currentLocation)
+            this.props.heroesLoaded(heroes, currentLocation)
         })
     }
 
     componentWillReceiveProps() {
-        var currentLoc = this.props.history.location.pathname.slice(1);
-        var prevLoc = this.props.location.pathname.slice(1);
-        if(currentLoc != prevLoc) {
-            this.props.changeFandom(currentLoc, prevLoc);
+        var currentLocation = this.props.history.location.pathname.slice(1);
+        var prevLocation = this.props.location.pathname.slice(1);
+        if(currentLocation != prevLocation) {
+            this.props.changeFandom(currentLocation, prevLocation);
         }
-        console.log('we are here suka')
     }
 
     render() {
