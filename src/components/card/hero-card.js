@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './hero-card.css'
 
-//принимает 
-class HeroCard extends Component{
+class HeroCard extends Component {
+
     constructor(props){
         super(props)
+        this.defaultCountValue = 1;
+        this.doNothingFunction = () => {};
         this.crossUrl = 'https://cdn.onlinewebfonts.com/svg/img_414950.png';
     }
 
@@ -23,15 +25,15 @@ class HeroCard extends Component{
     }
 
     renderCounter = () => {
-        const counter = this.props.counter || 1;
-        return counter == 1
+        const counter = this.props.counter || this.defaultCountValue;
+        return counter == this.defaultCountValue
             ? null
             : (<div>{counter}</div>);
     }
 
     render(){
         const image = this.props.image;        
-        const addHero = this.props.addHero || (() => {});
+        const addHero = this.props.addHero || (this.doNothingFunction);
 
         return(
             <div onClick={() => addHero(this.props.name)}>

@@ -9,7 +9,12 @@ class ListOfHeroes extends Component{
         return(
             heroes == undefined ? null : 
             <div>
-                    { heroes.map(hero => <HeroCard key={hero.name} image={hero.image} name={hero.name} addHero={() => this.props.addHero(hero.name, hero.image)}></HeroCard>)}
+                    { heroes.map(hero => 
+                    <HeroCard key={hero.name} 
+                                image={hero.image} 
+                                name={hero.name} 
+                                addHero={() => this.props.addHero(hero.name, hero.image)}>
+                    </HeroCard>)}
             </div>
         )
     }

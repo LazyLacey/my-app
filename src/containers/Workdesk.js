@@ -7,7 +7,8 @@ import { loadHeroes } from "../api/heroes-api";
 import { withRouter  } from 'react-router-dom'
 
 import { connect } from 'react-redux';
-import { addHero, deleteHero, changeFandom, search, heroesLoaded, changeHeroesListByFandom, changeHeroesListBySearch } from '../store/actions';
+import { changeFandom, search, heroesLoaded, changeHeroesListByFandom, changeHeroesListBySearch } from '../store/all-heroes/actions';
+import { addHero, deleteHero} from '../store/chosen-heroes/actions'
 
 class Workdesk extends Component{
 
@@ -36,10 +37,10 @@ class Workdesk extends Component{
     render() {
         return(
             <div className='workdesk'>
-                <HeaderHeroes deleteHero = {this.props.deleteHero} chosenHeroes = {this.props.chosenHeroes} />
-                <SearchString search = {this.props.search} searchText = {this.props.inputSearch}/>
-                <ListOfHeroes heroesList = {this.props.heroesList} addHero={this.props.addHero}/>
-                <SwitchButtons fandom={this.props.fandom}/>
+                <HeaderHeroes deleteHero = {this.props.deleteHero} chosenHeroes = {this.props.chosenHeroes.chosenHeroes} />
+                <SearchString search = {this.props.search} searchText = {this.props.allHeroes.inputSearch}/>
+                <ListOfHeroes heroesList = {this.props.allHeroes.heroesList} addHero={this.props.addHero}/>
+                <SwitchButtons fandom={this.props.allHeroes.fandom}/>
             </div>
         )
     }
@@ -76,7 +77,6 @@ const mapDispatchToProps = (dispatch) => {
             dispatch(changeHeroesListByFandom(currentFandom))
         }      
     }
-
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Workdesk))
