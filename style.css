@@ -1,0 +1,58 @@
+body {
+    margin:0px;
+}
+.workdesk {
+    height: 100vh;
+    width: 100vw;
+    background-color:lightgrey;
+}
+.chosenHeroes {
+    overflow-x: scroll;
+    height: 30%;
+    background-color:rgb(53, 53, 58);
+    
+}
+.heroesList {
+    background-color:rgb(72, 74, 79);
+    position: fixed;
+    
+
+
+
+}
+.search {
+    background-color:rgb(72, 74, 79);
+    max-width: 100vw;
+    padding:10px;
+
+
+}
+input{
+    width: 100%;
+    max-width: 375px;
+    
+    height:35px;
+    border:0px; 
+
+}
+.buttonPanel{
+    position:absolute;
+    bottom: 0px;
+    width:100%;
+    height: 20%;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(53, 53, 58);
+ }
+
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color:rgb(128, 128, 128); 
+}
