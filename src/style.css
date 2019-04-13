@@ -12,7 +12,11 @@ body {
     background-color:#2B2D35;
     max-width: 100vw;
     max-height: 168px;   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+
 .heroesList {
     background-color:#31333D;
     position:absolute;
@@ -22,6 +26,13 @@ body {
     padding: 10px;
     box-sizing: border-box;
 }
+.nothing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff
+}
+
 .searchString {
     background-color:#31333D;
     max-width: 100vw;

@@ -7,8 +7,9 @@ class ListOfHeroes extends Component{
         //array
         const heroes = this.props.heroesList
         return(
-            heroes == undefined ? null : 
-            <div className="heroesList">
+            heroes == undefined || heroes.length == 0
+            ? <div className='nothing'>Ничего не найдено</div> 
+            : <div className="heroesList">
                     { heroes.map(hero => 
                     <HeroCard key={hero.name} 
                                 image={hero.image} 

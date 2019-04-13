@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './hero-card.css'
+import cross from './cross.png'
 
 class HeroCard extends Component {
 
@@ -7,7 +8,7 @@ class HeroCard extends Component {
         super(props)
         this.defaultCountValue = 1;
         this.doNothingFunction = () => {};
-        this.crossUrl = 'https://cdn.onlinewebfonts.com/svg/img_414950.png';
+        this.crossUrl = cross;
     }
 
     renderName = () => {
@@ -28,7 +29,7 @@ class HeroCard extends Component {
         const counter = this.props.counter || this.defaultCountValue;
         return counter == this.defaultCountValue
             ? null
-            : (<div>{counter}</div>);
+            : (<div className='counter'>{counter}</div>);
     }
 
     render(){
