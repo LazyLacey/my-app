@@ -1,22 +1,25 @@
 body {
     margin-bottom:79px;
     overflow-x: hidden;
+    background: #31333D;
+
 }
 .workdesk {
     height: 100vh;
     width: 100vw;
-    background-color:#31333D;
+    background: linear-gradient(180deg, #31333B 13.26%, #363945 74.59%, #2B2D35 100%);
 }
+/* 
 .headerHeroes {
     overflow-x: scroll;
     overflow-y: unset;
-    background-color:#2B2D35;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(180deg, #555761 -51.19%, #2B2D35 100%);    
     max-width: 100vw;
     max-height: 168px;   
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
+} */
 
 .heroesList {
     background-color:#31333D;
@@ -61,11 +64,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgb(53, 53, 58);
+    background-color: #31333D;
+    border: 0px;
+    visibility: hidden;
  }
 
 
 ::-webkit-scrollbar-thumb {
     border-radius: 3px;
-    background-color:rgb(128, 128, 128); 
+    background-color:#4B4E5C; 
 }
