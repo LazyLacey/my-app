@@ -11,7 +11,7 @@ class HeroCard extends Component {
     }
 
     renderName = () => {
-        const isNeedName = this.props.isNeedName || true;
+        const isNeedName = this.props.isNeedName;
         return isNeedName 
             ?  (<div>{this.props.name}</div>)
             :   null
@@ -20,7 +20,7 @@ class HeroCard extends Component {
     renderDelete = () => {
         const canBeDeleted = this.props.canBeDeleted;
         return canBeDeleted
-            ? (<img onClick={() => this.props.deleteHero(this.props.name)} src={this.crossUrl}/>)
+            ? (<img className='cross' onClick={() => this.props.deleteHero(this.props.name)} src={this.crossUrl}/>)
             : null;
     }
 

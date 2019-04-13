@@ -13,7 +13,8 @@ class ListOfHeroes extends Component{
                     <HeroCard key={hero.name} 
                                 image={hero.image} 
                                 name={hero.name} 
-                                addHero={() => this.props.addHero(hero.name, hero.image)}>
+                                addHero={() => this.props.addHero(hero.name, hero.image)}
+                                isNeedName={true}>
                     </HeroCard>)}
             </div>
         )

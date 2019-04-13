@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './switch-buttons.css'
 import { Link } from "react-router-dom";
+import marvel from "./Marvel.png";
+import dc from "./dc-logo.png";
 
 class SwitchButtons extends Component {
     
@@ -8,8 +10,8 @@ class SwitchButtons extends Component {
         const dcFandom = '/dc';
         const marvelFandom = '/marvel';
 
-        const dcImageUrl = 'https://image.flaticon.com/icons/svg/826/826335.svg'
-        const marvelImageUrl = 'https://image.flaticon.com/icons/svg/826/826331.svg'
+        const dcImageUrl = dc;
+        const marvelImageUrl = marvel;
 
         return(
             <div className="buttonPanel">

@@ -5,8 +5,10 @@ class Search extends Component{
         
         return(
             <div className='searchString'>
-                <input className='searchInput' value={this.props.searchText} onChange={(e) => this.props.search(e.target.value)}/> 
-            </div>
+                <input className='searchInput' value={this.props.searchText} 
+                placeholder="Имя героя"
+                onChange={(e) => this.props.search(e.target.value)}/>
+                 </div>
         )
     }
 }

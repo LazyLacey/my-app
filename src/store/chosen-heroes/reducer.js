@@ -36,7 +36,13 @@ export default function choseHeroReducer(state = getInitialState(), action) {
         else 
             return{
                 ...state,
-                chosenHeroes: {...state.chosenHeroes, [action.heroName] : state.chosenHeroes[action.heroName] - 1}
+                chosenHeroes: {...state.chosenHeroes,
+                    [action.heroName] : 
+                    {
+                        heroName: action.heroName, 
+                        image: state.chosenHeroes[action.heroName].image,
+                        count: count
+                    } }
             }
     default:
         return state
