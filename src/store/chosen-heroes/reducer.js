@@ -1,11 +1,13 @@
 export default function choseHeroReducer(state = getInitialState(), action) {
     switch (action.type){
         case 'ADD_HERO':
-        let currentCount = state.chosenHeroes[action.heroName];
-        currentCount = currentCount >= 1 
+        let currentCount = state.chosenHeroes[action.heroName] === undefined 
+            ? 0 
+            : state.chosenHeroes[action.heroName].count;
+        currentCount = currentCount != 0 
             ? currentCount + 1
             : 1;
-
+        console.log(currentCount+1)
         return {
             ...state,
             chosenHeroes: {...state.chosenHeroes, [action.heroName] : 

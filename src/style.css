@@ -6,7 +6,7 @@ body {
     width: 100vw;
     background-color:lightgrey;
 }
-.chosenHeroes {
+.headerHeroes {
     overflow-x: scroll;
     height: 30%;
     background-color:rgb(53, 53, 58);
@@ -14,25 +14,30 @@ body {
 }
 .heroesList {
     background-color:rgb(72, 74, 79);
-    position: fixed;
-    
+    position:absolute;
+    width:100vw;
+    height: auto;
+    max-width: 100vw;
+    padding: 10px;
+    box-sizing: border-box;
 
 
 
 }
-.search {
+.searchString {
     background-color:rgb(72, 74, 79);
     max-width: 100vw;
     padding:10px;
 
 
 }
-input{
+.searchInput{
     width: 100%;
     max-width: 375px;
     
     height:35px;
     border:0px; 
+    border-radius: 5px;
 
 }
 .buttonPanel{

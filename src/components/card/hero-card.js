@@ -36,7 +36,7 @@ class HeroCard extends Component {
         const addHero = this.props.addHero || (this.doNothingFunction);
 
         return(
-            <div onClick={() => addHero(this.props.name)}>
+            <div className="heroCard" onClick={() => addHero(this.props.name)}>
                 {this.renderDelete()}
                 <img src={image}/>
                 {this.renderName()}

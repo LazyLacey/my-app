@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-//import './App.css';
+import './style.css';
 import Workdesk from './containers/Workdesk';
 import { BrowserRouter, Redirect, Link, Switch } from "react-router-dom";
-import Route from "react-router-dom/Route"
+import {Route} from "react-router-dom"
 
 class App extends Component {
   render() {

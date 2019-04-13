@@ -12,7 +12,7 @@ class SwitchButtons extends Component {
         const marvelImageUrl = 'https://image.flaticon.com/icons/svg/826/826331.svg'
 
         return(
-            <div>
+            <div className="buttonPanel">
                 <Link to={dcFandom}>
                     <img src={dcImageUrl}/>
                 </Link>

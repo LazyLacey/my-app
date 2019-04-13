@@ -8,7 +8,7 @@ class ListOfHeroes extends Component{
         const heroes = this.props.heroesList
         return(
             heroes == undefined ? null : 
-            <div>
+            <div className="heroesList">
                     { heroes.map(hero => 
                     <HeroCard key={hero.name} 
                                 image={hero.image} 
