@@ -13,7 +13,7 @@ export default class ChosenHeroes extends Component{
             Object.keys(heroes).length == 0 
                 ? null 
                 : <div className='headerHeroes'>
-                    { Object.keys(heroes).map(heroName => <div className='fuckinHack'>
+                    { Object.keys(heroes).map(heroName => <div className='headeHeroWrapper'>
                         <HeroCard key={heroName} 
                             isNeedName={false} 
                             name={heroName} 

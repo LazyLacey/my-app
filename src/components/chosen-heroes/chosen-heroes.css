@@ -10,14 +10,14 @@
     padding-left: 10px;
 }
 
-.headerHeroes > .fuckinHack {
+.headerHeroes > .headeHeroWrapper {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 168px;
 }
 
-.headerHeroes > .fuckinHack > .heroCard {
+.headerHeroes > .headeHeroWrapper > .heroCard {
     height: 100px;
 }
 
