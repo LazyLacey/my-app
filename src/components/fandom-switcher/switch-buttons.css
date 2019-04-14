@@ -5,12 +5,20 @@
 }
 
 .buttonPanel{
-    position: absolute;
-    background: #31333D;
+    /* position: absolute;
     bottom: 0px;
-    left: 0px;
+    left: 0px; */
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    /* height:30vh; */
+    width:100%;
+    background: #31333D;
 }
-.buttonPanel > a > img{
+.buttonPanel > .buttonWrapper > a > img{
     height: 75px ;
+    width: 110px;
     position: top;
+    margin-left: 20px;
+    margin-right: 20px;
 }

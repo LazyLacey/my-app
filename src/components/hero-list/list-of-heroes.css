@@ -10,6 +10,7 @@
 
 .heroesList > .heroCard { 
     margin-bottom: 12px;
+    overflow:auto;
 }
 
 .nothing {
