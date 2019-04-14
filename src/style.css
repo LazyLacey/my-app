@@ -1,5 +1,4 @@
 body {
-    margin-bottom:79px;
     overflow-x: hidden;
     background: #31333D;
 
@@ -9,54 +8,6 @@ body {
     width: 100vw;
     background: linear-gradient(180deg, #31333B 13.26%, #363945 74.59%, #2B2D35 100%);
 }
-/* 
-.headerHeroes {
-    overflow-x: scroll;
-    overflow-y: unset;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(180deg, #555761 -51.19%, #2B2D35 100%);    
-    max-width: 100vw;
-    max-height: 168px;   
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-} */
-
-.heroesList {
-    background-color:#31333D;
-    position:absolute;
-    width:100vw;
-    height: auto;
-    max-width: 100vw;
-    padding: 10px;
-    box-sizing: border-box;
-}
-.nothing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff
-}
-
-.searchString {
-    background-color:#31333D;
-    max-width: 100vw;
-    padding:10px;
-
-
-}
-.searchInput{
-    width: 100%;
-    max-width: 375px;
-    color: white;
-    height:35px;
-    border:0px; 
-    background: #4B4E5C;
-    border-radius: 8px;
-    padding: 10px;
-    box-sizing: border-box;
-
-}
-
 
 ::-webkit-scrollbar {
     height: 12px;

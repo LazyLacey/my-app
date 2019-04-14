@@ -10,7 +10,9 @@ export default class ChosenHeroes extends Component{
     render(){
         const heroes = this.props.chosenHeroes;
         return (
-            <div className='headerHeroes'>
+            Object.keys(heroes).length == 0 
+                ? null 
+                : <div className='headerHeroes'>
                     { Object.keys(heroes).map(heroName => <div className='fuckinHack'>
                         <HeroCard key={heroName} 
                             isNeedName={false} 

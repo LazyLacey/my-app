@@ -16,7 +16,7 @@
     font-size: x-small;
     color:white;
     text-align: center;
-    white-space: nowrap;
+    line-height: 10px;
 }
 
 .heroCard > .counter { 
@@ -48,6 +48,12 @@
     top: -8px;
     right: -8px;
 }
+
+
+.heroesList > .heroCard { 
+    margin-bottom: 12px;
+}
+
 @media screen and (max-width:375px){
     .heroCard{
         height: 112px;

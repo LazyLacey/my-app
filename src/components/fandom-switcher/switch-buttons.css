@@ -5,13 +5,10 @@
 }
 
 .buttonPanel{
-    position: fixed;
-    height: 79px;
+    position: absolute;
     background: #31333D;
     bottom: 0px;
     left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
 }
 .buttonPanel > a > img{
     height: 75px ;
